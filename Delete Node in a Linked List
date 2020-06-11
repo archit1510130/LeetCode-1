@@ -1,0 +1,22 @@
+/***********************************
+Given a list:[4,5,1,9] and address of node to be removed, remove the given node
+eg : here 5 is to be removed; so output would be --[4,1,9]
+
+**************************************/
+
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode(int x) { val = x; }
+ * }
+ */
+class Solution {
+    public void deleteNode(ListNode node) {
+           node.val = node.next.val;
+          node.next = node.next.next;
+        
+        
+    }
+}
